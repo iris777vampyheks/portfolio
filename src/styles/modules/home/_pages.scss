@@ -1,0 +1,44 @@
+/* Add this CSS to your App.css or a separate CSS file */
+.sec-5 {
+    padding: 50px;
+    text-align: center;
+    background-color: #d1d1d1;
+  }
+  
+  .sec-5 h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    display: block;
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,61 @@
+
+$about-container-max-width: 600px;
+$about-container-margin: 0 auto;
+$about-container-padding: 20px;
+$about-container-text-align: center;
+
+$heading-font-size: 36px;
+$heading-font-weight: bold;
+$heading-margin-bottom: 20px;
+
+$paragraph-font-size: 18px;
+$paragraph-line-height: 1.6;
+
+$skills-list-style: none;
+$skills-list-padding: 0;
+$skills-list-text-align: left;
+
+$list-item-margin-bottom: 8px;
+
+$contact-heading-font-size: 24px;
+$contact-heading-font-weight: bold;
+$contact-heading-margin-top: 40px;
+
+.about-container {
+    max-width: $about-container-max-width;
+    margin: $about-container-margin;
+    padding: $about-container-padding;
+    text-align: $about-container-text-align;
+
+    h1 {
+        font-size: $heading-font-size;
+        font-weight: $heading-font-weight;
+        margin-bottom: $heading-margin-bottom;
+    }
+
+    p {
+        font-size: $paragraph-font-size;
+        line-height: $paragraph-line-height;
+    }
+
+    ul {
+        list-style-type: $skills-list-style;
+        padding: $skills-list-padding;
+        text-align: $skills-list-text-align;
+
+        li {
+            margin-bottom: $list-item-margin-bottom;
+        }
+    }
+
+    h2 {
+        font-size: $heading-font-size;
+        font-weight: $heading-font-weight;
+    }
+
+    .contact-heading {
+        font-size: $contact-heading-font-size;
+        font-weight: $contact-heading-font-weight;
+        margin-top: $contact-heading-margin-top;
+    }
+}
