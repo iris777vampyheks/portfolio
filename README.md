@@ -11,7 +11,10 @@ Welcome to my portfolio! This is a showcase of my web development projects, skil
 - React Router: Used for handling navigation and creating routes for different sections of the portfolio.
 - SCSS: Utilized for styling the components, enabling maintainable and organized CSS styles.
 - Google Maps API: Integrated to display my location on the contact page.
-- Font Awesome Icons: Used to add visually appealing icons throughout the portfolio.
+- Bootstrap: Utilized to enhance the responsiveness and overall layout of the portfolio. Bootstrap is a popular front-end framework that provides pre-built components and styles, making it 
+  easier to create a visually appealing and mobile-friendly website.
+- Font Awesome: Used to include a set of scalable vector icons that enhance the design and visual appeal of the portfolio. Font Awesome offers a wide range of icons that can be easily i 
+  integrated into the project.
 
 ## Pages :
 
