@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to my portfolio! This is a showcase of my web development projects, skills, and experiences. It's designed to provide an insight into my work as a web developer and demonstrate the range of projects I have completed.
 
-In the project directory, you can run:
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js: The portfolio is built using React.js, a powerful JavaScript library for building user interfaces.
+- React Router: Used for handling navigation and creating routes for different sections of the portfolio.
+- SCSS: Utilized for styling the components, enabling maintainable and organized CSS styles.
+- Google Maps API: Integrated to display my location on the contact page.
+- Font Awesome Icons: Used to add visually appealing icons throughout the portfolio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages :
 
-### `npm test`
+### Home
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The home page greets visitors with a dynamic text animation showcasing my passion as a web developer.
 
-### `npm run build`
+### About
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The about page gives an overview of my background, interests, and journey into the world of web development.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Facts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The facts page presents interesting and fun facts about me in a visually appealing carousel format.
 
-### `npm run eject`
+### Portfolio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The portfolio page showcases a collection of my web development projects. Each project is presented with a brief description and a link to the corresponding GitHub repository.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Expertise
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The expertise page highlights the diverse set of skills I have acquired, ranging from web development to data analysis and creative writing.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Services
 
-## Learn More
+The services page outlines the services I offer, including web development, UI/UX design, mobile app development, data analysis, machine learning, public speaking, and creative writing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The contact page provides my contact details, including address, email, and phone number. It also features a contact form that allows visitors to send me messages directly.
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this repository to your local machine.
+2. Navigate to the project directory and run `npm install` to install the necessary dependencies.
+3. Run `npm start` to start the development server and view the portfolio in your preferred web browser.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Iris vampyheks777
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source and available under the [MIT License](LICENSE).
