@@ -1,7 +1,8 @@
 /////////////////// HOME ///////////////////////////////
-.sec-1 {
-    height: 120vh;
+.first-par {
     background-image: url(../../../assets/images/myPic.jpg);
+    font-family: Rockwell;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -12,43 +13,35 @@
     justify-content: center;
     align-items: center;
 }
-.name{
-    text-align: center;
-    font-family: Rockwell;
-}
-.dev {
-    margin-left: 250px;
-    text-align: center;
-    font-family: Rockwell;
-}
 
 .name {
+    text-align: center;
+    font-family: Rockwell;
     color: rgb(255, 255, 255);
     font-size: 100px;
 }
 
 .dev {
+    margin-left: 250px;
     margin-right: 100px;
+    text-align: center;
+    font-family: Rockwell;
     color: white;
     font-size: 70px;
 }
 
-
-.sec-5 {
-    padding: 50px;
+.cta-container {
     text-align: center;
-    background-color: #d1d1d1;
-}
-
-.sec-5 h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 /////// about : //////////////////////////////
+.par {
+    height: 100vh;
+}
+
 .about-container {
-    background-color: #f9f9f9;
+    background-color: #ebebeb;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -127,9 +120,15 @@
 }
 
 ////////////////// FACTS//////////////////////////////// : 
+
+.parent-fact {
+    height: 100vh;
+    margin-top: 500px
+}
+
 .carousel-container {
-    font-family: Rockwell;
-    background-color: #eaf2bdba;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f6f8eccf;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +150,7 @@
         height: 380px;
         padding: 20px;
         border-radius: 10px;
-        background-color: rgba(255, 255, 243, 0.717);
+        background-color: rgba(229, 229, 229, 0.589);
         box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.347);
         color: #fff;
         text-align: center;
@@ -268,19 +267,19 @@
 
 ////////////////// Portfolio.scss///////////////////////////////////
 
-.portfolio-container {
+.parent-portfolio {
+    background-color: #4d08ed8e;
     font-family: Rockwell;
-    text-align: center;
 
     .portfolio-heading {
+        text-align: center;
         font-size: 36px;
         color: #333;
-        margin-top: 40px;
         text-transform: uppercase;
     }
 
     .portfolio-cards {
-        margin-top: 30px;
+        margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -317,7 +316,7 @@
             justify-content: center;
             margin-top: 20px;
             color: #fff;
-            background-color: #ff5151;
+            background-color: #4d08ed;
             text-decoration: none;
             font-size: 16px;
             padding: 10px 20px;
@@ -325,7 +324,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background-color: #950000;
+                background-color:#4d08edb4;
             }
         }
 
@@ -336,12 +335,14 @@
     }
 }
 
-
 ///////////////// SKILLS/////////////////////
-
-.skills-container {
+.parent-skills{
+    height: 117vh;
+    background-color: rgba(21, 249, 0, 0.635);
     font-family: Rockwell;
-    margin-top: 20px;
+
+}
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -381,64 +382,68 @@
 
 /////////////// SERVICES ///////////
 
+.parent-services {
+    height: 124vh;
+    background-color: #33333327;
 
-.services-container {
-    font-family: Rockwell;
-    background-color: #f0f0f0;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 1000px;
+    .services-container {
+        font-family: Rockwell;
+        background-color: #f0f0f0;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 1000px;
 
-    .services-header {
-        text-align: center;
-        margin-bottom: 30px;
-        transform: translateZ(40px);
-
-        .services-heading {
-            font-size: 36px;
-            color: #283593;
-            margin-bottom: 10px;
-        }
-    }
-
-    .services-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-
-        .service {
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
+        .services-header {
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transform: translateZ(30px);
-            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            transform: translateZ(40px);
 
-            &:hover {
-                transform: perspective(1000px) rotateX(5deg) scale(1.03);
-            }
-
-            span {
-                font-size: 48px;
-                display: block;
-                margin-bottom: 20px;
-            }
-
-            h3 {
-                font-size: 24px;
+            .services-heading {
+                font-size: 36px;
                 color: #283593;
                 margin-bottom: 10px;
             }
+        }
 
-            p {
-                font-size: 16px;
-                color: #333;
+        .services-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            .service {
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                transform: translateZ(30px);
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: perspective(1000px) rotateX(5deg) scale(1.03);
+                }
+
+                span {
+                    font-size: 48px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    color: #283593;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #333;
+                }
             }
         }
     }
@@ -446,6 +451,10 @@
 
 ////// CONTACT /////////////
 
+.parent-contact {
+    margin-top: 120px;
+    height: 160vh;
+}
 
 .contact-container {
     font-family: Rockwell;
@@ -477,6 +486,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .icon {
@@ -511,4 +521,61 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+//FOOOTER //////
+.custom-footer {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    .footer-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        border-top: 1px solid #ddd;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .footer-social-heading {
+        font-family: Rockwell;
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .footer-social-links {
+        display: flex;
+        justify-content: center;
+
+        a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #777;
+            font-size: 28px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #0400ff;
+            }
+        }
+    }
+
+    .footer-copy {
+        font-size: 14px;
+        color: #777;
+        margin-top: 20px;
+    }
 }

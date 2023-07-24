@@ -1,49 +1,55 @@
-// Navigation.js
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
     const navStyle = {
-        fontFamily: "Rockwell",
+        fontFamily: "Courier New, monospace",
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-evenly",
         alignItems: "center",
-        height: "90px",
+        height: "80px",
         backgroundColor: "black",
         color: "white",
         fontSize: "20px",
         fontWeight: "bold",
+        letterSpacing: "2px",
+        borderBottom: "2px solid white",
+        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     };
 
     const navLinkStyle = {
         color: "white",
         textDecoration: "none",
+        padding: "10px 15px",
+        transition: "transform 0.2s ease-in-out",
+    };
+
+    const navLinkHoverStyle = {
+        transform: "scale(1.1)",
     };
 
     return (
         <div className="navbar" style={navStyle}>
-            <NavLink to={"/"} style={navLinkStyle}>
+            <a href="#home" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 Home
-            </NavLink>
-            <NavLink to={"/about"} style={navLinkStyle}>
+            </a>
+            <a href="#about" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 About
-            </NavLink>
-            {/* Add links for the new sections */}
-            <NavLink to={"/facts"} style={navLinkStyle}>
+            </a>
+            <a href="#facts" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 Facts
-            </NavLink>
-            <NavLink to={"/portfolio"} style={navLinkStyle}>
+            </a>
+            <a href="#portfolio" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 Portfolio
-            </NavLink>
-            <NavLink to={"/skills"} style={navLinkStyle}>
-                Skills
-            </NavLink>
-            <NavLink to={"/services"} style={navLinkStyle}>
+            </a>
+            <a href="#expertise" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
+                Expertise
+            </a>
+            <a href="#services" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 Services
-            </NavLink>
-            <NavLink to={"/Contact"} style={navLinkStyle}>
+            </a>
+            <a href="#contact" style={{ ...navLinkStyle, ...navLinkHoverStyle }}>
                 Contact
-            </NavLink>
+            </a>
         </div>
     );
 };

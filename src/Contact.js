@@ -2,6 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
+    <div className='parent-contact' id='contact'>
     <div className="contact-container">
       <div className="contact-header">
         <h1 className='title'>Contact Us</h1>
@@ -39,9 +40,9 @@ const Contact = () => {
             </div>
             <div className="form-group">
               <label htmlFor="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message " name="message" required></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button className='mb-4' type="submit" style={{ height: '40px' }}>Send Message 📩</button>
           </form>
         </div>
       </div>
@@ -54,6 +55,7 @@ const Contact = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+    </div>
     </div>
   );
 };
