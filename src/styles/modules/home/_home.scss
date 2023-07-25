@@ -17,7 +17,7 @@
 .name {
     text-align: center;
     font-family: Rockwell;
-    color: rgb(255, 255, 255);
+    color: rgba(234, 234, 234, 0.897);
     font-size: 100px;
 }
 
@@ -37,7 +37,9 @@
 
 /////// about : //////////////////////////////
 .par {
-    height: 100vh;
+    cursor: pointer;
+
+    height: 220vh;
 }
 
 .about-container {
@@ -61,7 +63,7 @@
         .about-heading {
             margin-top: 20px;
             font-size: 36px;
-            color: #283593;
+            color: #0dcff1;
             margin-bottom: 10px;
         }
     }
@@ -93,7 +95,7 @@
 
             .about-links-heading {
                 font-size: 24px;
-                color: #283593;
+                color: #16c9ff;
                 margin-bottom: 10px;
                 text-align: center;
             }
@@ -111,7 +113,7 @@
                     color: #666;
 
                     &:hover {
-                        color: #283593;
+                        color: #0aa2fa;
                     }
                 }
             }
@@ -122,13 +124,13 @@
 ////////////////// FACTS//////////////////////////////// : 
 
 .parent-fact {
-    height: 100vh;
-    margin-top: 500px
+    height: 110vh;
+    margin-top: 500px;
+    background-color: #f6f8eccf;
 }
 
 .carousel-container {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #f6f8eccf;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +151,7 @@
         width: 260px;
         height: 380px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 40px;
         background-color: rgba(229, 229, 229, 0.589);
         box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.347);
         color: #fff;
@@ -218,23 +220,24 @@
 
     &.dark-mode {
         background-color: #353535a7;
+        height: 100%;
 
         .fact-card {
             background-color: #444444de;
             color: #fff;
+        }
+
+        h2,
+        p {
+            color: #fff;
+        }
+
+        &.active {
+            box-shadow: 0 0 15px rgba(223, 223, 223, 0.788);
 
             h2,
             p {
-                color: #fff;
-            }
-
-            &.active {
-                box-shadow: 0 0 15px rgba(223, 223, 223, 0.788);
-
-                h2,
-                p {
-                    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-                }
+                text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
             }
         }
 
@@ -246,9 +249,10 @@
     }
 }
 
+/* ddark mode */
 .dark-mode-toggle {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #444;
@@ -264,6 +268,165 @@
         background-color: #555;
     }
 }
+
+
+
+///////////////////// RESUME ///////////////////
+.resume {
+    height: 280vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Rockwell;
+    background-color: #f9f9f9;
+}
+
+.ttl {
+    border-bottom: #0400ff solid 2px;
+    width: 170px;
+
+}
+
+.profile-card {
+    max-width: 757px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.profile-card .designation {
+    font-size: 18px;
+    color: #0073ff;
+    margin-bottom: 16px;
+}
+
+.profile-card .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-card .contact-info {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.profile-card .contact-info strong {
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.profile-card .contact-info a {
+    color: #0073ff;
+    text-decoration: none;
+}
+
+.profile-card .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.work-experience h2,
+.education h2,
+.skills h2,
+.projects h2,
+.certificates h2,
+.languages h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #0073ff;
+    padding-bottom: 8px;
+    color: #0073ff;
+}
+
+.work-experience h3,
+.education h3,
+.projects h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.work-experience p,
+.education p,
+.skills p,
+.projects p,
+.certificates p,
+.languages p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.work-experience a,
+.education a,
+.projects a,
+.certificates a,
+.languages a {
+    color: #0073ff;
+    text-decoration: none;
+}
+
+.work-experience a:hover,
+.education a:hover,
+.projects a:hover,
+.certificates a:hover,
+.languages a:hover {
+    text-decoration: underline;
+}
+
+.interests {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.interests h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #0073ff;
+    padding-bottom: 8px;
+    color: #0073ff;
+}
+
+.interests p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.interests::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: inherit;
+    background: linear-gradient(145deg, #00a6ff, #0073ff);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.interests:hover::before {
+    opacity: 1;
+}
+
+
+
+
 
 ////////////////// Portfolio.scss///////////////////////////////////
 
@@ -324,7 +487,7 @@
             transition: background-color 0.3s;
 
             &:hover {
-                background-color:#4d08edb4;
+                background-color: #4d08edb4;
             }
         }
 
@@ -336,12 +499,13 @@
 }
 
 ///////////////// SKILLS/////////////////////
-.parent-skills{
+.parent-skills {
     height: 117vh;
     background-color: rgba(21, 249, 0, 0.635);
     font-family: Rockwell;
 
 }
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -449,10 +613,63 @@
     }
 }
 
+
+//////////////Testimonial///////////////
+.parent-testimonial {
+    height: 77vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.test{
+    font-family: Rockwell;
+}
+.testimonial {
+    font-family: Rockwell;
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-size: 18px;
+    color: #0073ff;
+    margin-bottom: 8px;
+}
+
+.testimonial-role {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
 ////// CONTACT /////////////
 
 .parent-contact {
-    margin-top: 120px;
+    margin-top: 100px;
     height: 160vh;
 }
 
@@ -464,6 +681,11 @@
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container:hover {
+    transform: translateY(-25px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-header {

@@ -7,7 +7,7 @@ import Facts from "./Facts";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./layouts/Footer";
-
+import ScrollToTopButton from "./ScrollToTop";
 export const App = () => {
   return (
     <>
@@ -19,6 +19,8 @@ export const App = () => {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footer" element={<Footer />} />
+        <Route path="/ScrollToTopp" element={<ScrollToTopButton />} />
+
 
       </Routes>
     </>

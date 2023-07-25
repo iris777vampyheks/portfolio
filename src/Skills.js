@@ -4,7 +4,7 @@ const skillsData = [
     {
         title: "Web Development",
         description: "Creating responsive and user-friendly web applications using modern technologies like React, Node.js, and Express.",
-        icon: "💻",
+        icon: "🧑‍💻",
     },
     {
         title: "UI/UX Design",
